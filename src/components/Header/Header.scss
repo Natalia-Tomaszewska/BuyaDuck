@@ -1,7 +1,7 @@
 @import "../../styles/mixins";
 @include mobile {
   .App-header {
-    background-color: #bada55;
+    background-color: transparent;
   }
 }
 @include tablet {
@@ -11,6 +11,6 @@
 }
 @include desktop {
   .App-header {
-    background-color: cornflowerblue;
+    background-color: transparent;
   }
 }
