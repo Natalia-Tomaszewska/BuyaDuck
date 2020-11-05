@@ -17,7 +17,6 @@ const MainScreen = () => {
                     </div>
 
 
-
                 </div>
                 <div className="images-container">
                     <div className="circle1 circle">
