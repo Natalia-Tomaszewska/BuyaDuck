@@ -1,25 +1,26 @@
 import React from 'react';
 import "./Navigation.scss";
 import logo from "./logo.png";
+import {NavLink} from "react-router-dom";
 
 const Navigation = () => {
     return(
         <header className="header">
             <div className="header-container">
-                <a href="../../../public/index.html" className="logo">
-                    <img src={logo} alt="logo"/>
-                </a>
+                <NavLink to="/" >
+                    <img src={logo} alt="logo" className="logo"/>
+                </NavLink>
             </div>
             <nav>
                 <ul className="header-nav">
                     <li className="nav-element">
-                        <a href="../../../public/index.html" className="nav-link">SHOP NOW</a>
+                        <NavLink to="/shop">SHOP NOW</NavLink>
                     </li>
                     <li className="nav-element">
-                        <a href="../../../public/index.html" className="nav-link">ABOUT US</a>
+                        <NavLink to="/">ABOUT US</NavLink>
                     </li>
                     <li className="nav-element">
-                        <a href="../../../public/index.html" className="nav-link">CONTACT</a>
+                        <NavLink to="/">CONTACT</NavLink>
                     </li>
                 </ul>
             </nav>
