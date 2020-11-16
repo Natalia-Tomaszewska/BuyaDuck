@@ -4,20 +4,15 @@ import duck from "./noun_Duck_151982 (1).svg";
 import BigButton from "../../components/BigButton/BigButton";
 
 
-function scrollAppear() {
+const timeoutID = setTimeout(function() {
     const introText = document.querySelector('.text-container');
     if (introText === null) {
         return;
     }
-    const introPosition = introText.getBoundingClientRect().top;
-    const screenPosition = window.innerHeight;
-
-    if (introPosition < screenPosition) {
         introText.classList.add('text-container-appear');
-    }
-}
+},1000);
 
-window.addEventListener('scroll', scrollAppear);
+
 
 
 const MainScreen = () => {

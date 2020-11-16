@@ -11,7 +11,7 @@
 
       .text-container {
         opacity: 0;
-        transform: translateX(-100px);
+        transform: translateY(-100px);
         transition: 0.5s all ease-in-out;
         height: 184px;
         width: 506px;
@@ -24,7 +24,7 @@
 
       .text-container-appear {
         opacity: 1;
-        transform: translateX(0px);
+        transform: translateY(0px);
       }
 
       .mainScreen-button {
