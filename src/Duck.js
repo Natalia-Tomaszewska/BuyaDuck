@@ -32,7 +32,7 @@ const Duck = () => {
                 scale={[2, 2, 2]}
             >
                 {/* Color it */}
-                <meshPhongMaterial attach="material" color="#FF007F" />
+                <meshPhongMaterial attach="material" color="#C16200" />
             </primitive>
             <primitive
                 ref={ref2}
@@ -42,7 +42,7 @@ const Duck = () => {
                 scale={[2, 2, 2]}
             >
                 {/* Color it */}
-                <meshPhongMaterial attach="material" color="#FF007F" />
+                <meshPhongMaterial attach="material" color="#49010F" />
             </primitive>
             <primitive
                 ref={ref3}
@@ -52,7 +52,7 @@ const Duck = () => {
                 scale={[2, 2, 2]}
             >
                 {/* Color it */}
-                <meshPhongMaterial attach="material" color="#FF007F" />
+                <meshPhongMaterial attach="material" color="#881600" />
             </primitive>
         </>
     );
