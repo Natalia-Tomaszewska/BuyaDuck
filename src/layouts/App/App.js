@@ -8,6 +8,7 @@ import {BrowserRouter as Router, Route, Switch} from "react-router-dom";
 import ShopScreen from "../../components/ShopScreen/ShopScreen";
 import Canvas from "../../Canvas";
 import WhyDuck from "../../components/WhyDuck/WhyDuck";
+import Form from "../../components/Form/Form";
 
 function App() {
     const [showCanvas, setShowCanvas] = useState(false);
@@ -23,6 +24,7 @@ function App() {
                 {/*<ShopScreen setShowCanvas={setShowCanvas} />*/}
                 {showCanvas && <Canvas onClick={() => setShowCanvas(false)}/>}
                 <WhyDuck/>
+                <Form />
                 <Header/>
             </div>
         </Router>
