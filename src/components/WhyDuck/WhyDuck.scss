@@ -1,0 +1,71 @@
+.whyDuck-section {
+
+
+  .whyDuck-container {
+
+    .whyDuck-box1 {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 300px;
+      margin-left: 200px;
+      margin-right: 200px;
+      opacity: 0;
+      transform: translateX(500px);
+      transition: 1s all ease-in-out;
+
+      .box1-text1 {
+        height: 500px;
+        width: 500px;
+
+        .whyDuck-heading1 {
+
+        }
+
+        .whyDuck-paragraph1 {
+
+        }
+      }
+
+      .image-lotOfDucks {
+
+      }
+    }
+    .whyDuck-box1-appear {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+
+    .whyDuck-box2 {
+      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-between;
+      margin-bottom: 300px;
+      margin-left: 200px;
+      margin-right: 200px;
+      opacity: 0;
+      transform: translateX(-500px);
+      transition: 1s all ease-in-out;
+
+      .box1-text2 {
+        height: 500px;
+        width: 500px;
+
+        .whyDuck-heading2 {
+
+        }
+
+        .whyDuck-paragraph2 {
+
+        }
+      }
+
+      .image-unicornDuck {
+
+      }
+    }
+    .whyDuck-box2-appear {
+      opacity: 1;
+      transform: translateX(0px);
+    }
+  }
+}

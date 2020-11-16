@@ -4,6 +4,22 @@ import duck from "./noun_Duck_151982 (1).svg";
 import BigButton from "../../components/BigButton/BigButton";
 
 
+function scrollAppear() {
+    const introText = document.querySelector('.text-container');
+    if (introText === null) {
+        return;
+    }
+    const introPosition = introText.getBoundingClientRect().top;
+    const screenPosition = window.innerHeight;
+
+    if (introPosition < screenPosition) {
+        introText.classList.add('text-container-appear');
+    }
+}
+
+window.addEventListener('scroll', scrollAppear);
+
+
 const MainScreen = () => {
     return (
         <section className="mainScreen">
@@ -15,7 +31,6 @@ const MainScreen = () => {
                     <div className="mainScreen-button">
                         <BigButton/>
                     </div>
-
 
 
                 </div>

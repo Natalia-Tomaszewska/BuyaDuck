@@ -3,11 +3,16 @@
 .mainScreen {
   .mainScreen-container {
     display: flex;
+
     .mainScreen-text {
       display: flex;
       flex-direction: column;
       justify-content: space-around;
-      .text-container{
+
+      .text-container {
+        opacity: 0;
+        transform: translateX(-100px);
+        transition: 0.5s all ease-in-out;
         height: 184px;
         width: 506px;
         margin-top: 100px;
@@ -16,12 +21,19 @@
         font-size: 54px;
         font-family: "Microsoft Tai Le";
       }
-    .mainScreen-button {
-      margin-left: 170px;
-      margin-bottom: 200px;
-flex-grow: 1;
+
+      .text-container-appear {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+
+      .mainScreen-button {
+        margin-left: 170px;
+        margin-bottom: 200px;
+        flex-grow: 1;
+      }
     }
-    }
+
     .images-container {
       .circle {
         border-radius: 50%;
@@ -127,6 +139,7 @@ flex-grow: 1;
   }
 
 }
+
 @keyframes amimation3 {
   0% {
     transform: translateX(0px) translateY(0px);
