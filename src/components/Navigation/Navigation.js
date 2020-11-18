@@ -3,6 +3,7 @@ import "./Navigation.scss";
 import logo from "./logo.png";
 import {NavLink} from "react-router-dom";
 
+
 const Navigation = () => {
     return(
         <header className="header">

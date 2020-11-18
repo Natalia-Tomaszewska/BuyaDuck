@@ -1,4 +1,5 @@
 @import "./src/styles/fonts";
+@import "./src/styles/mixins";
 
 .mainScreen {
   .mainScreen-container {
@@ -158,3 +159,295 @@
   }
 
 }
+
+
+@include tablet {
+  .mainScreen {
+    max-width: 100vw;
+    .mainScreen-container {
+      display: flex;
+
+
+      .mainScreen-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .text-container {
+          opacity: 0;
+          transform: translateY(-100px);
+          transition: 0.5s all ease-in-out;
+          height: 184px;
+          width: 506px;
+          margin-top: 100px;
+          margin-left: 100px;
+          margin-bottom: 200px;
+          font-size: 54px;
+          font-family: "Microsoft Tai Le";
+        }
+
+        .text-container-appear {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+
+        .mainScreen-button {
+
+          flex-grow: 1;
+          display: flex;
+          align-items: center;
+        }
+      }
+
+      .images-container {
+        .circle {
+          border-radius: 50%;
+          position: absolute;
+          animation-fill-mode: both;
+          transition: transform 3s;
+          background: #61dafb;
+        }
+
+        .circle:active {
+          transform: scale(2);
+        }
+
+        .circle1 {
+          display: none;
+        }
+
+        .circle2 {
+          display: none;
+        }
+
+        .circle3 {
+          display: none;
+        }
+
+        .circle4 {
+          display: none;
+        }
+
+        .bigDuck {
+          .duckImg {
+            display: none;
+        }
+      }
+    }
+  }
+
+  @keyframes amimation1 {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    25% {
+      transform: translateX(-10px) translateY(5px);
+    }
+    50% {
+      transform: translateX(0px) translateY(-10px);
+    }
+    75% {
+      transform: translateX(10px) translateY(5px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+
+  }
+
+  @keyframes amimation2 {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    25% {
+      transform: translateX(-20px) translateY(10px);
+    }
+    50% {
+      transform: translateX(0px) translateY(-10px);
+    }
+    75% {
+      transform: translateX(20px) translateY(10px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+
+  }
+
+  @keyframes amimation3 {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    25% {
+      transform: translateX(-20px) translateY(10px);
+    }
+    50% {
+      transform: translateX(-40px) translateY(5px);
+    }
+    75% {
+      transform: translateX(20px) translateY(10px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+
+  }
+
+}
+@include mobile {
+  .mainScreen {
+    .mainScreen-container {
+      display: flex;
+
+      .mainScreen-text {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+
+        .text-container {
+          opacity: 0;
+          transform: translateY(-100px);
+          transition: 0.5s all ease-in-out;
+          height: 184px;
+          width: 506px;
+          margin-top: 100px;
+          margin-left: 100px;
+          margin-bottom: 200px;
+          font-size: 54px;
+          font-family: "Microsoft Tai Le";
+        }
+
+        .text-container-appear {
+          opacity: 1;
+          transform: translateY(0px);
+        }
+
+        .mainScreen-button {
+          margin-left: 170px;
+          margin-bottom: 200px;
+          flex-grow: 1;
+        }
+      }
+
+      .images-container {
+        .circle {
+          border-radius: 50%;
+          position: absolute;
+          animation-fill-mode: both;
+          transition: transform 3s;
+          background: #61dafb;
+        }
+
+        .circle:active {
+          transform: scale(2);
+        }
+
+        .circle1 {
+          height: 10px;
+          width: 10px;
+          top: 100px;
+          left: 730px;
+          animation: amimation1 5s ease-in-out -2s infinite both;
+        }
+
+        .circle2 {
+          height: 10px;
+          width: 10px;
+          background: linear-gradient(rgba(194, 100, 254, 1), rgba(194, 100, 254, 1));
+          right: -156px;
+          top: 30px;
+          z-index: 1;
+          animation: amimation1 8s ease-in-out -4s infinite both;
+        }
+
+        .circle3 {
+          height: 725px;
+          width: 716px;
+          top: 300px;
+          left: 730px;
+          background: none;
+          z-index: 0;
+          border: 2px solid black;
+          animation: amimation2 5s ease-in-out -2s infinite both;
+        }
+
+        .circle4 {
+          height: 825px;
+          width: 816px;
+          top: -20px;
+          left: 1330px;
+          background: none;
+          border: 2px solid black;
+          z-index: 2;
+          animation: amimation3 5s ease-in-out -2s infinite both;
+        }
+
+        .bigDuck {
+          .duckImg {
+          display: none;
+
+
+          }
+        }
+      }
+    }
+  }
+
+  @keyframes amimation1 {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    25% {
+      transform: translateX(-10px) translateY(5px);
+    }
+    50% {
+      transform: translateX(0px) translateY(-10px);
+    }
+    75% {
+      transform: translateX(10px) translateY(5px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+
+  }
+
+  @keyframes amimation2 {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    25% {
+      transform: translateX(-20px) translateY(10px);
+    }
+    50% {
+      transform: translateX(0px) translateY(-10px);
+    }
+    75% {
+      transform: translateX(20px) translateY(10px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+
+  }
+
+  @keyframes amimation3 {
+    0% {
+      transform: translateX(0px) translateY(0px);
+    }
+    25% {
+      transform: translateX(-20px) translateY(10px);
+    }
+    50% {
+      transform: translateX(-40px) translateY(5px);
+    }
+    75% {
+      transform: translateX(20px) translateY(10px);
+    }
+    100% {
+      transform: translateX(0px) translateY(0px);
+    }
+
+  }
+
+}}

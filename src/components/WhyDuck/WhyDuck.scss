@@ -1,3 +1,5 @@
+@import "src/styles/mixins";
+
 .whyDuck-section {
 
 
@@ -69,3 +71,81 @@
     }
   }
 }
+@include tablet {
+  .whyDuck-section {
+max-width: 100vw;
+
+    .whyDuck-container {
+
+      .whyDuck-box1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin-bottom: 10px;
+
+        opacity: 0;
+        transform: translateX(500px);
+        transition: 1s all ease-in-out;
+
+        .box1-text1 {
+          height: 500px;
+          width: 50vh;
+          text-align: right;
+
+          .whyDuck-heading1 {
+
+          }
+
+          .whyDuck-paragraph1 {
+
+          }
+        }
+
+        .image-lotOfDucks {
+display: none;
+        }
+      }
+
+      .whyDuck-box1-appear {
+        opacity: 1;
+        transform: translateX(0px);
+
+      }
+
+      .whyDuck-box2 {
+        display: flex;
+        flex-direction: column;
+
+        margin-bottom: 10px;
+
+        opacity: 0;
+        transform: translateX(-400px);
+        transition: 1s all ease-in-out;
+
+        .box1-text2 {
+          height: 500px;
+          width: 50vh;
+          text-align: right;
+          margin-right: 1200px;
+
+          .whyDuck-heading2 {
+
+          }
+
+          .whyDuck-paragraph2 {
+
+          }
+        }
+
+        .image-unicornDuck {
+display: none;
+        }
+      }
+
+      .whyDuck-box2-appear {
+        opacity: 1;
+        transform: translateX(0px);
+      }
+    }
+  }
+  }

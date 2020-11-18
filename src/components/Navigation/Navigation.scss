@@ -1,3 +1,5 @@
+@import "src/styles/mixins";
+
 .header {
   display: flex;
   justify-content: space-between;
@@ -10,6 +12,7 @@
     }
 
   }
+
   nav {
     .header-nav {
       box-sizing: border-box;
@@ -27,14 +30,125 @@
         margin-top: 10px;
         z-index: 5;
 
-      .nav-link {
-        text-decoration: none;
-      }
+        .nav-link {
+          text-decoration: none;
+        }
 
       }
+
       .nav-element:hover {
         border-bottom: 5px solid #7A08FA;
         margin-top: 0px;
+      }
+    }
+  }
+}
+
+@include mobile {
+  .header {
+    display: flex;
+    background-color: transparent;
+    height: 20vh;
+    width: 100%;
+    flex-direction: column;
+
+    .header-container {
+
+      .logo {
+
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+
+      }
+
+    }
+
+    nav {
+
+      .header-nav {
+        box-sizing: border-box;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        color: #3E2F50;
+        z-index: 5;
+
+
+        .nav-element {
+          margin-left: 0px;
+          margin-right: 120px;
+          margin-top: 10px;
+          z-index: 5;
+
+          .nav-link {
+            text-decoration: none;
+          }
+
+        }
+
+        .nav-element:hover {
+          border-bottom: 5px solid #7A08FA;
+          margin-top: 0px;
+        }
+      }
+    }
+  }
+}
+@include tablet {
+  .header {
+    align-items: center;
+    display: flex;
+    background-color: transparent;
+
+    max-width: 100vw;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .header-container {
+
+      .logo {
+
+
+
+
+      }
+
+    }
+
+    nav {
+
+      .header-nav {
+        box-sizing: border-box;
+        list-style: none;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        text-align: center;
+        color: #3E2F50;
+        z-index: 5;
+
+
+        .nav-element {
+          margin-left: 0px;
+          margin-right: 120px;
+          margin-top: 10px;
+          z-index: 5;
+
+          .nav-link {
+            text-decoration: none;
+          }
+
+        }
+
+        .nav-element:hover {
+          border-bottom: 5px solid #7A08FA;
+          margin-top: 0px;
+        }
       }
     }
   }
