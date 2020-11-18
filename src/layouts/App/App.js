@@ -1,6 +1,5 @@
 import React, {useState} from "react";
 import './App.scss';
-import Header from "../../components/Header/Header"
 import Navigation from "../../components/Navigation/Navigation";
 import MainScreen from "../../components/MainScreen/MainScreen";
 import ShopApp from "../ShopApp/ShopApp";
@@ -25,7 +24,6 @@ function App() {
                 {showCanvas && <Canvas onClick={() => setShowCanvas(false)}/>}
                 <WhyDuck/>
                 <Form />
-                <Header/>
             </div>
         </Router>
 
