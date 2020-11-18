@@ -8,6 +8,8 @@ import ShopScreen from "../../components/ShopScreen/ShopScreen";
 import Canvas from "../../Canvas";
 import WhyDuck from "../../components/WhyDuck/WhyDuck";
 import Form from "../../components/Form/Form";
+import Footer from "../../components/Footer/Footer";
+
 
 function App() {
     const [showCanvas, setShowCanvas] = useState(false);
@@ -24,6 +26,8 @@ function App() {
                 {showCanvas && <Canvas onClick={() => setShowCanvas(false)}/>}
                 <WhyDuck/>
                 <Form />
+                <Footer/>
+
             </div>
         </Router>
 

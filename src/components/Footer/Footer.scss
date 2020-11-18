@@ -1,0 +1,32 @@
+.footer-section {
+  box-sizing: border-box;
+  height: 60px;
+  background: white;
+
+  .footer-container {
+    display: flex;
+    padding: 5px;
+    justify-content: space-between;
+
+    .footer-copyright {
+      display: flex;
+      margin-left: 10px;
+      text-align: center;
+      color: #cdcdcd;
+
+    }
+
+    .footer-icons {
+      display: flex;
+      box-sizing: border-box;
+
+
+      .facebook {
+margin-right: 20px;
+      }
+      .twitter {
+        margin-right: 20px;
+      }
+    }
+  }
+}
