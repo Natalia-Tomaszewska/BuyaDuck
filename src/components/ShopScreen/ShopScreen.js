@@ -20,10 +20,11 @@ const ShopScreen = ({setShowCanvas}) => {
 <img src={ducky} height="200px" width="200px"/>
                             </div>
                             <div className="customize-container">
-                                <p>Customize your duck</p>
                                 <button className="customize-button" onClick={() => setShowCanvas(true)}>
                                     Customize
                                 </button>
+                                <p>Customize your duck</p>
+
                             </div>
                             <div className="buy-container">
 
