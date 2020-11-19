@@ -14,10 +14,10 @@ const Footer = () => {
                     <p className="footer-rights">© 2020 BuyaDuck, All Rights Reserved</p>
                 </div>
                 <div className="footer-icons">
-                    <a href="#" className="facebook">
+                    <a href="https://www.facebook.com/" className="facebook">
                         <img src={facebook} height="50px" alt=""/>
                     </a>
-                    <a href="#" className="twitter">
+                    <a href="https://twitter.com/" className="twitter">
                         <img src={twitter} height="50px" alt=""/>
                     </a>
                 </div>
