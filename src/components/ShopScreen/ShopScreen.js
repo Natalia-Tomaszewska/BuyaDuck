@@ -1,5 +1,6 @@
 import React from 'react';
 import "./ShopScreen.scss";
+import ducky from "./pinkduck1.jpeg";
 
 
 const ShopScreen = ({setShowCanvas}) => {
@@ -16,7 +17,7 @@ const ShopScreen = ({setShowCanvas}) => {
                         <div className="box1-container">
                             <h6>Buy a duck</h6>
                             <div className="duckRender">
-
+<img src={ducky} height="200px" width="200px"/>
                             </div>
                             <div className="customize-container">
                                 <p>Customize your duck</p>

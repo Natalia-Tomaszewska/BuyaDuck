@@ -3,6 +3,7 @@
 
   .shopScreen-container {
 
+
     .shopScreen-heading {
       margin-top: 100px;
       font-family: "Microsoft Tai Le";
@@ -30,20 +31,36 @@
         .box1-container {
 
           h6 {
+            font-family: "Microsoft Tai Le";
+            color: #3E2F50;
 
           }
 
           .duckRender {
-
+margin-bottom: 6em;
           }
 
           .customize-container {
+            display: flex;
+            padding: 5px;
+            justify-content: space-between;
             p {
+              font-family: "Microsoft Tai Le";
+              color: #3E2F50;
 
             }
 
             .customize-button {
-
+              color: #fff;
+              text-transform: uppercase;
+              text-decoration: none;
+              background: #7A08FA;
+              cursor: pointer;
+              padding: 20px;
+              border-radius: 5px;
+              display: inline-block;
+              border: none;
+              transition: all 0.4s ease 0s;
             }
 
           }
